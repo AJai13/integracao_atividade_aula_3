@@ -1,0 +1,11 @@
+-- SQLite database initialization script
+
+CREATE TABLE produtos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    fornecedor TEXT NOT NULL,
+    endereco_fornecedor TEXT NOT NULL,
+    quantidade INTEGER NOT NULL,
+    endereco TEXT NOT NULL,
+    preco_unitario REAL NOT NULL
+);

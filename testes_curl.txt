@@ -1,0 +1,11 @@
+# GET
+curl -X GET http://127.0.0.1:5000/produtos
+
+# POST
+curl -X POST http://127.0.0.1:5000/produtos -H "Content-Type: application/json" -d '{"nome": "Produto 1", "fornecedor": "Fornecedor X", "endereco_fornecedor": "Rua A", "quantidade": 10, "endereco": "Rua B", "preco_unitario": 25.50}'
+
+# PUT (substitua <ID> pelo ID real do produto)
+curl -X PUT http://127.0.0.1:5000/produtos/<ID> -H "Content-Type: application/json" -d '{"quantidade": 20}'
+
+# DELETE (substitua <ID> pelo ID real do produto)
+curl -X DELETE http://127.0.0.1:5000/produtos/<ID>
